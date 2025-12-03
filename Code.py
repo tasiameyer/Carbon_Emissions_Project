@@ -3,7 +3,7 @@ import pandas as pd
 #Show all columns and rows when printing dataframes
 pd.set_option('display.max_columns', None)
 pd.set_option('display.max_rows', None)
-excel_path="/Users/tasia/Documents/Carbon_Emissions_Project/National_Fossil_Carbon_Emissions_2025_v0.3.xlsx"
+excel_path="National_Fossil_Carbon_Emissions_2025_v0.3.xlsx"
 df=pd.read_excel(excel_path, engine="openpyxl")
 #Gathering stats on the data set
 print(df.head())
