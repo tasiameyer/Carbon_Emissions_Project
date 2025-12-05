@@ -3,7 +3,7 @@
  The purpose of this project was to clean and analyze a dataset showing the amount of carbon emissions released by each country, determine the highest and lowest producers, and then come up with possibilities as to what is causing the highest emissions. 
 
 ### Why?
-I decided to start my first analysis project by researching a topic I am passionate about-carbon emissions. Carbon emissions is the greatest contributor to climate change caused by human activities, and reducing the amount of fossil fuels we as a population are eitting is the only way to protect our environment. 
+I decided to start my first analysis project by researching a topic I am passionate about-carbon emissions. Carbon emissions is the greatest contributor to climate change caused by human activities, and reducing the amount of fossil fuels we as a population are emitting is the only way to protect our environment. 
 
 ### Installation and Libraries
 The only library needed to execute this code is Pandas. When trying to run the command 'read_excel' after installing Pandas, I was encountering an issue. I kept getting this code:
