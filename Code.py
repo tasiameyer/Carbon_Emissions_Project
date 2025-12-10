@@ -68,3 +68,42 @@ std_dev_bottom_5={}
 for country in bottom_5_countries:
     std_dev_bottom_5[country]=df_individual_countries[country].std()
 print("The standard deviation of fossil carbon emissions for the bottom 5 countries are:", std_dev_bottom_5)
+#Visualizae the top 5 and bottom 5 countries using a bar chart
+import matplotlib.pyplot as plt
+#Top 5 countries
+top_5_means=[df_individual_countries[country].mean() for country in top_5_countries]
+plt.figure(figsize=(10,6))
+plt.bar(top_5_countries, top_5_means, color='red')
+plt.title('Top 5 Countries with Highest Average Fossil Carbon Emissions')
+plt.xlabel('Countries')
+plt.xticks
+plt.ylabel('Average Fossil Carbon Emissions')
+plt.show()
+#Bottom 5 countries
+bottom_5_means=[df_individual_countries[country].mean() for country in bottom_5_countries]
+plt.figure(figsize=(10,6))
+plt.bar(bottom_5_countries, bottom_5_means, color='green')
+plt.title('Bottom 5 Countries with Lowest Average Fossil Carbon Emissions')
+plt.xlabel('Countries')
+plt.xticks(rotation=45)
+plt.ylabel('Average Fossil Carbon Emissions')
+plt.show()
+#Visualize the top 5 and bottom 5 countries using a box plot
+#Top 5 countries
+plt.figure(figsize=(10,6))
+data_top_5=[df_individual_countries[country] for country in top_5_countries]
+plt.boxplot(data_top_5, labels=top_5_countries)
+plt.title('Box Plot of Top 5 Countries with Highest Average Fossil Carbon Emissions')
+plt.xlabel('Countries')
+plt.xticks
+plt.ylabel('Fossil Carbon Emissions')
+plt.show()
+#Bottom 5 countries
+plt.figure(figsize=(10,6))
+data_bottom_5=[df_individual_countries[country] for country in bottom_5_countries]
+plt.boxplot(data_bottom_5, labels=bottom_5_countries)
+plt.title('Box Plot of Bottom 5 Countries with Lowest Average Fossil Carbon Emissions')
+plt.xlabel('Countries')
+plt.xticks(rotation=45)
+plt.ylabel('Fossil Carbon Emissions')
+plt.show()
